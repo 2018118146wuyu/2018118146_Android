@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case UPDATE_TEXT:
                     // 在这里可以进行UI操作
                     //text.setText("onCreate4: "+Thread.currentThread().getId());
-                    text.setText("onCreate5: "+getMainLooper().getThread().getId());
+
+                    text.setText("线程ID: "+Thread.currentThread().getId()+"主线程ID: "+getMainLooper().getThread().getId());
                     //Log.i(TAG, "onCreate5: "+getMainLooper().getThread().getId());
                     //text.setText("Nice to meet you");
                     break;
