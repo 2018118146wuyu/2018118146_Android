@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".StudentListActivity"
+    >
+    <RelativeLayout android:id="@+id/RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bn_search_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="搜索" />
+
+        <Button
+            android:id="@+id/btn_add_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bn_select"
+            android:layout_toRightOf="@+id/bn_search_id"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="添加学生记录" />
+
+        <Button
+            android:id="@+id/bn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="选择"></Button>
+    </RelativeLayout>
+
+    <com.test1.sims.SyncHorizontalScrollView
+        android:id="@+id/hs_12"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="47dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bn_id2"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="id" />
+
+            <Button
+                android:id="@+id/bn_money2"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="行政班级" />
+
+            <Button
+                android:id="@+id/bn_use2"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="学号" />
+
+            <Button
+                android:id="@+id/bn_date2"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="姓名" />
+
+            <Button
+                android:id="@+id/bn_category2"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="性别" />
+
+            <Button
+                android:id="@+id/bn_modify2"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="最后修改时间" />
+
+        </LinearLayout>
+    </com.test1.sims.SyncHorizontalScrollView>
+
+    <com.test1.sims.SyncHorizontalScrollView
+        android:id="@+id/hs_22"
+        android:layout_width="match_parent"
+        android:layout_height="584dp"
+        android:scrollbars="none">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </ListView>
+    </com.test1.sims.SyncHorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/showLiner"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bn_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/bn_selectall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/bn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

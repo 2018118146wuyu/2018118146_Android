@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".StudentSearchNameActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="              姓名查询"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" />
+
+    <EditText
+        android:id="@+id/et_searchName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bn_sure_search2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/bn_return2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="返回" />
+
+    <LinearLayout
+        android:id="@+id/linersearch2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.test1.sims.SyncHorizontalScrollView
+            android:id="@+id/hs_12"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="47dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bn_id2"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="id" />
+
+                <Button
+                    android:id="@+id/bn_money2"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="行政办级" />
+
+                <Button
+                    android:id="@+id/bn_use2"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="学号" />
+
+                <Button
+                    android:id="@+id/bn_date2"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="姓名" />
+
+                <Button
+                    android:id="@+id/bn_category2"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="性别" />
+
+                <Button
+                    android:id="@+id/bn_modify2"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="最后修改时间" />
+
+            </LinearLayout>
+        </com.test1.sims.SyncHorizontalScrollView>
+
+        <com.test1.sims.SyncHorizontalScrollView
+            android:id="@+id/hs_22"
+            android:layout_width="match_parent"
+            android:layout_height="484dp"
+            android:scrollbars="none">
+
+            <ListView
+                android:id="@+id/searchListView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </ListView>
+        </com.test1.sims.SyncHorizontalScrollView>
+
+        <Button
+            android:id="@+id/return_id2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+</LinearLayout>

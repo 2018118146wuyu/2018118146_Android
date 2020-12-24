@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/cb_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <TextView android:id="@+id/tv_st_id"
+        android:layout_width="300px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_st_adclass"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView android:id="@+id/tv_st_sno"
+        android:layout_width="300px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/tv_st_name"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView android:id="@+id/tv_st_sex"
+        android:layout_width="300px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_st_modify"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+</LinearLayout>

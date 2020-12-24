@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset"
+    tools:context=".AddStudentActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip"      >
+
+        <TextView android:id="@+id/tv_re_text_id"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="记录ID："     />
+        <TextView android:id="@+id/tv_re_id"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:text="未分配ID"
+            android:layout_toRightOf="@id/tv_re_text_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_re_text_id"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="16sp"      />
+
+        <TextView
+            android:id="@+id/tv_money_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/tv_re_text_id"
+            android:layout_alignLeft="@id/tv_re_text_id"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:gravity="center_vertical|right"
+            android:text="班级："
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/tv_money_text"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_money_text"
+            android:hint="请输入班级"
+            android:inputType="text"
+            android:paddingLeft="20dip" />
+        <TextView android:id="@+id/tv_use_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_money_text"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="学号："      />
+        <EditText android:id="@+id/et_use"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_use_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_use_text"
+            android:hint="请输入学号"
+            android:paddingLeft="20dip"
+            android:maxLength="10"
+            android:inputType="number"      />
+
+        <TextView android:id="@+id/tv_category_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_below="@id/tv_use_text"
+            android:layout_alignLeft="@id/tv_use_text"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="性别："
+            android:textSize="16sp"      />
+
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_above="@+id/et_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/tv_category_text"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_sex_nan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="男"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sex_nv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="女"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+        <TextView android:id="@+id/tv_date_text"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="5dip"
+            android:layout_below="@id/tv_category_text"
+            android:layout_marginBottom="5dip"
+            android:textSize="16sp"
+            android:text="姓名："              />
+
+        <EditText android:id="@+id/et_date"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/tv_date_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_date_text"
+            android:hint="请输入姓名"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dip"
+            android:maxLength="10"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date_text"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/btn_clear"
+            android:background="@android:color/holo_blue_dark"
+            android:text="取消"></Button>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date_text"
+            android:layout_alignRight="@id/rg_sex"
+            android:background="@android:color/holo_blue_dark"
+            android:text="保存"></Button>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date_text"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/btn_save"
+            android:background="@android:color/holo_blue_dark"
+            android:text="重置"></Button>
+    </RelativeLayout> </ScrollView>
